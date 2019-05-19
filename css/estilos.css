@@ -1,0 +1,74 @@
+/********** Base styles **********/
+.contenedor{
+	width: 100%;
+	background: gray;
+}
+
+h1 {
+	font-family: Arial, Sans-serif; /*Tipo de fuente*/
+	text-align: center;	/*Alineacion*/
+	margin-bottom: 15px;	/*Margen inferior*/
+}
+
+
+.col-lg{
+	background: pink;
+  	border: 1px solid black;
+	width: 90%;
+	height: 150px;
+	margin-bottom: 10px;	/*Margen inferior*/
+  	margin-right: 5%;
+    margin-left: 5%;
+  	margin-top: 15px;
+    color: red;
+}
+
+p {
+
+	font-family: Arial, Sans-serif;	/*Tipo de fuente*/
+	margin-bottom: 5px;	/*Margen inferior*/
+  	margin-right: 5px;
+  	margin-left: 5px;
+}
+
+h2 {
+	text-align: right;	/*Alineacion*/
+	margin-right: 50px;	
+}
+
+.tit {
+	color: white;	/*Color de fuente*/
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	
+	.col-lg {
+		background: red;
+		float: left;
+		width: 30%;
+	}
+
+
+}
+
+
+
+/********** Large devices only 
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-lg {
+		float: left;
+		background: blue;
+		width: 33.33%;
+	}
+
+}**********/
+
+/********** Small devices only 
+@media (max-width: 767px) {
+	.col-lg {
+		float: left;
+		background: green;
+		width: 33.33%;
+	}
+}**********/

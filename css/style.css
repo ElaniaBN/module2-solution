@@ -1,0 +1,98 @@
+/********** Base styles **********/
+*{
+	padding: 0px;	/*Margen como borde*/
+	margin-top: 0px;	/*Margen superior*/
+	margin-bottom: 0px;	/*Margen inferior*/
+	margin-left: 0px;	/*Margen izquierdo*/
+	margin-right: 0px;	/*Margen derecho*/
+}
+h1 {
+	font-family: Arial, Sans-serif; /*Tipo de fuente*/
+	text-align: center;	/*Alineacion*/
+	margin-bottom: 15px;	/*Margen inferior*/
+}
+
+h2 {
+	border: 1px solid black;
+	width: 25%;	/*Ancho*/
+}
+
+p {
+	background: gray;	/*Fondo*/
+	border: 1px solid black;
+	width: 80%;	/*Ancho*/
+	height: 150px;	/*Largo*/
+	margin-top: 20px;	/*Margen superior*/
+	margin-right: auto;	/*Margen derecho*/
+	margin-left: auto;	/*Margen izquierdo*/
+	padding: 30px;
+	font-family: Arial, Sans-serif; /*Tipo de fuente*/
+}
+
+section#primera-seccion, #segunda-seccion, #tercera-seccion{
+	position: relative;	/*Posicion base*/
+}
+
+#tit-uno{
+	background: pink;	/*Fondo*/	
+}
+#tit-dos{
+	background: red;	/*Fondo*/
+}
+#tit-tres{
+	background: yellow;	/*Fondo*/
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	#primera-seccion, #segunda-seccion, #tercera-seccion{
+	  float: left;	/*En movimiento*/
+      width: 33.33%;	/*Ancho*/
+	}
+
+	#tit-uno, #tit-dos, #tit-tres{
+		position: absolute;	/*Posicion variante*/
+		top: 20px;	/*Hacia arriba*/
+		left: 67%;	/*Hacia la izquierda*/
+		width: 30%;	/*Ancho*/
+	}
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#primera-seccion, #segunda-seccion{
+	  float: left;	/*En movimiento*/
+      width: 50%;	/*Ancho*/
+	}
+
+	#tercera-seccion{
+		float: left;	/*En movimiento*/
+    	width: 100%;	/*Ancho*/
+	}
+
+	#tit-uno, #tit-dos{
+		position: absolute;
+		top: 20px;	/*Hacia arriba*/
+		left: 66%;	/*Hacia la izquierda*/
+		width: 30%;	/*Ancho*/
+	}
+	#tit-tres{
+		position: absolute;
+		top: 20px;	/*Hacia arriba*/
+		left: 63%;	/*Hacia la izquierda*/
+		width: 30%;	/*Ancho*/
+	}
+}
+/********** Small devices only **********/
+@media (max-width: 767px){
+	#primera-seccion, #segunda-seccion, #tercera-seccion{
+	  float: left;	/*En movimiento*/
+      width: 100%;	/*Ancho*/
+	}
+
+	#tit-uno, #tit-dos, #tit-tres{
+		position: absolute;
+		top: 20px;	/*Hacia arriba*/
+		left: 69%;	/*Hacia la izquierda*/
+		width: 25%;	/*Ancho*/
+	}
+}
